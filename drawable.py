@@ -9,7 +9,7 @@ class Drawable(object) :
         return self.surface
     
     def move(self, x, y):
-        self.rect.move(x, y)
+        self.rect = self.rect.move(x, y)
 
     def get_rect(self):
         return self.rect

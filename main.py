@@ -22,3 +22,6 @@ if __name__ == "__main__":
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 master.set_win(True)
+            if event.type == pygame.KEYDOWN:
+                master.event(event.key)
+
