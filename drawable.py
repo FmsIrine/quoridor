@@ -16,4 +16,6 @@ class Drawable(object) :
 
     def get_pos(self):
         return (self.rect[0], self.rect[1])
+    
+    
 

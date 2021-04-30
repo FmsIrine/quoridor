@@ -24,4 +24,9 @@ if __name__ == "__main__":
                 master.set_win(True)
             if event.type == pygame.KEYDOWN:
                 master.event(event.key)
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    master.event(0xdeadbeef)
+                if event.button == 3:
+                    master.event(0xcafebabe)
 
